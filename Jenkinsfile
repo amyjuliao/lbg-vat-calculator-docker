@@ -6,11 +6,6 @@ pipeline {
     }
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/amyjuliao/lbg-vat-calculator-docker.git'
-            }
-        }
         stage('Update Dependencies') {
             steps {
                 script {
